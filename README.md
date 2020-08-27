@@ -4,27 +4,27 @@
 
 Instale as dependências do projeto utilizando o comando:
 ```bash
-// usando NPM
+# usando NPM
 $ npm install
 
-// usando YARN
+# usando YARN
 $ yarn install
 ```
 
 Deixe o projeto rodando com o seguinte comando:
 ```bash
-// usando NPM
+# usando NPM
 $ npm start
 
-// usando YARN
+# usando YARN
 $ yarn start
 ```
 
 Agora execute o seguinte comando para ver os testes acontecendo no Browser:
 ```bash
-// usando NPM
+# usando NPM
 $ npm run test:e2e
 
-// usando YARN
+# usando YARN
 $ yarn test:e2e
 ```

@@ -12,12 +12,13 @@ describe('testando o arquivo app.js', () => {
   })
 
   it('Deveria escrever no input e ao clicar no botão mostrar o nome', () => {
-    cy.get('#input').type('Fulano')
+    cy.get('#input')
+      .type('Guilherme Santos').should('have.value', 'Guilherme Santos')
 
     cy.get('#botao').click()
 
     cy.get('#nome').should('be.visible')
 
-    cy.get('#nome').contains(/Meu nome é: Fulano/)
+    cy.get('#nome').contains(/Meu nome é: Guilherme Santos/)
   })
 })

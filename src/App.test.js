@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('deve renderizar o conteudo da tag h1', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+  const linkElement = getByText(/Criando meu primeiro teste E2E/i);
   expect(linkElement).toBeInTheDocument();
 });
